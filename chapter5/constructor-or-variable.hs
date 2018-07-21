@@ -21,4 +21,16 @@ module ConstructorOrVariable where
 -- 4. Categorize each component of the type signature f :: f -> g -> C
 -- fully polymorphic fully polymorphic concrete
 
+-- Write a type signature
+--
+ functionH :: [t] -> t
+ functionH (x:_) = x
+
+ functionC :: Ord a => a -> a -> Bool  
+ functionC x y = 
+  if (x > y) then True else False
+
+ functionS :: (t, t1) -> t1
+ functionS (x, y) = y
+
 

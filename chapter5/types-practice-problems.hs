@@ -1,6 +1,6 @@
+module Nums where
 -- 1. All function applications return a value. 
 --  Determine the value returned by these function applications and the type of that value. 
-
 
 --  a) (* 9) 6 
 one :: Num a => a 
